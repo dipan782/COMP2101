@@ -1,2 +1,4 @@
 #!/bin/bash
-echo Hello World!
+# My first script - helloworls.sh
+echo 'Hello World!'
+echo "I am process # $$"
