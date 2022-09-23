@@ -1,5 +1,6 @@
 #!/bin/bash
 # My second script - sysinfo.sh
+cat <<EOF
 $ ./sysinfo.sh 
 Host Information:
    Static hostname: dipan200492527
@@ -22,3 +23,4 @@ tmpfs           5.0M  4.0K  5.0M   1% /run/lock
 tmpfs           389M  2.4M  387M   1% /run/user/1000
 /dev/sr0        127M  127M     0 100% /media/dipan/CDROM
 /dev/sr1        3.6G  3.6G     0 100% /media/dipan/Ubuntu 22.04
+EOF
