@@ -1,0 +1,20 @@
+#!/bin/bash
+#Bash lab 3
+
+echo "Step-1. Installing LXD in MY VM"
+echo "========"
+# determining if lxd is installed or not. To locate this place, I had used which lxd command.
+
+if [ -e "/snap/bin/lxd" ]; then
+    echo "Output = lxd is already installed in the VM"
+else
+    "$(sudo snap install lxd)"
+        echo "lxd installed successfully"
+fi
+echo "======="
+
+echo "Step2. Running lxbr0 in the vm"
+echo "======="
+#running lxbr0 in the vm using lxd init --auto
+$(lxd init --auto)
+echo "Output = lxbr0 is created"
