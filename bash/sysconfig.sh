@@ -43,6 +43,8 @@ option:
 
 # This function will remove all the temp files created by the script
 function cleanup {
+rm /tmp/sysinfo.$$
+echo "temp files deleted"
 exit
 }
 # The temp files are all named similarly, "/tmp/somethinginfo.$$"
